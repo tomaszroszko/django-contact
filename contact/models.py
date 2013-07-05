@@ -19,7 +19,7 @@ class ContactMessage(models.Model):
                             blank=True)
     message = models.TextField(_('Message'))
 
-    date_received = models.DateTimeField(_('Received'), auto_now=True)
+    date_received = models.DateTimeField(_('Received'), auto_now_add=True)
     date_readed = models.DateTimeField(_('Readed'), null=True, blank=True)
 
     objects = ContactMessageManager()
