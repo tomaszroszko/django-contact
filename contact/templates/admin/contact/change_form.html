@@ -1,0 +1,11 @@
+{% extends "admin/change_form.html" %}
+
+{% block submit_buttons_bottom %}
+{% load i18n %}
+<footer class="grp-module grp-submit-row grp-fixed-footer">
+    <ul>
+        <li><a href="mailto:{{ original.from_email }}?subject=RE: {{ original.title }}" class="grp-button grp-default">{% trans "answer" %}</a></li>
+    </ul>
+</footer>
+
+{% endblock %}
