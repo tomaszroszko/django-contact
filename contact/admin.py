@@ -43,7 +43,7 @@ class BaseMessageAdmin(admin.ModelAdmin):
         """
             return trucated message
         """
-        return truncatewords(obj.mesasge, 5)
+        return truncatewords(obj.message, 5)
     message_admin.short_description = _('Message')
 
     def answer_link(self, obj):
